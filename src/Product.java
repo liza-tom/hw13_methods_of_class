@@ -18,12 +18,10 @@ public class Product {
         this.price = price;
         this.category = category;
     }
-
     @Override
     public String toString(){
         return "Товар[артикул=" + id + ", название=" + name + ", цена=" + price + ", категория=" + category + "]";
     }
-
     public boolean equals(Object o) {
         if (this == o){
             return true;
@@ -36,5 +34,4 @@ public class Product {
             && Objects.equals(name, product.name)
             && Objects.equals(category, product.category);
     }
-
 }

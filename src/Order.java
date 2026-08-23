@@ -3,6 +3,7 @@ import java.util.Arrays;
 public class Order {
     private String customer;
     private Product[] basket;
+
     public Order(String customer, Product[] basket){
         this.customer = customer;
         this.basket = basket;
@@ -21,6 +22,7 @@ public class Order {
         }
         return true;
     }
+    @Override
     public String toString(){
         return "Покупатель " + customer + ", товары: " + Arrays.toString(basket);
     }
@@ -35,5 +37,4 @@ public class Order {
         return this.customer.equals(order.customer)
                 && this.basketEquals(order.basket);
     }
-
 }
