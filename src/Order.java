@@ -27,6 +27,9 @@ public class Order {
         return "Покупатель " + customer + ", товары: " + Arrays.toString(basket);
     }
     public boolean equals(Object o){
+        if (this == null && o == null) {
+            return true;
+        }
         if (this == o){
             return true;
         }

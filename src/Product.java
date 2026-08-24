@@ -30,8 +30,6 @@ public class Product {
             return false;
         Product product = (Product) o;
         return id == product.id
-            && price == product.price
-            && Objects.equals(name, product.name)
             && Objects.equals(category, product.category);
     }
 }
