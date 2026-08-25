@@ -13,7 +13,7 @@ public class Order {
             return false;
         }
         for (int i = 0; i < basket.length; i++) {
-            if (this.basket[i] != null  && this.basket[i].equals(basket[i])){
+            if (this.basket[i] != null  && this.basket[i].equals(basket[i]) || this.basket[i] == null && basket[i] == null){
                 continue;
             }
             else{
